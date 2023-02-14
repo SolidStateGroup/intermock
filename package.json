@@ -1,10 +1,10 @@
 {
   "name": "intermock-ssg",
-  "version": "0.2.5",
+  "version": "1.0.0",
   "description": "Automatically create mock objects and JSON from TypeScript interfaces via Faker",
   "repository": {
     "type": "git",
-    "url": "https://github.com/google/intermock.git"
+    "url": "https://github.com/SolidStateGroup/intermock"
   },
   "bin": {
     "intermock": "build/src/cli/index.js"
