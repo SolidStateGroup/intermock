@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { faker } from "@faker-js/faker";
+import { faker } from '@faker-js/faker'
 
 export const smartProps: { [index: string]: any } = {
   firstName: faker.name.firstName(),
@@ -27,7 +27,7 @@ export const smartProps: { [index: string]: any } = {
   full_name: faker.name.fullName(),
   name: faker.random.word(),
   informalName: faker.name.firstName(),
-  phone: faker.phone.number("+44 74 ### ## ##"),
+  phone: faker.phone.number('+44 74 ### ## ##'),
   email: faker.internet.email(),
   emailAddress: faker.internet.email(),
   primaryEmail: faker.internet.email(),
@@ -50,12 +50,12 @@ export const smartProps: { [index: string]: any } = {
   birthdate: faker.date.birthdate(),
   productID: faker.random.alphaNumeric(5),
   product_id: faker.random.alphaNumeric(6),
-  duration: faker.random.numeric(1),
+  duration: faker.datatype.number({ max: 60, min: 1 }),
   color: faker.color.human(),
   colour: faker.color.human(),
   images: faker.image.imageUrl(),
-  video: "https://www.youtube.com/watch?v=cI4ryatVkKw",
+  video: 'https://www.youtube.com/watch?v=cI4ryatVkKw',
   previous: faker.internet.url(),
   next: faker.internet.url(),
   uid: faker.random.alphaNumeric(9),
-};
+}
