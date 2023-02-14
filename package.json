@@ -1,5 +1,5 @@
 {
-  "name": "intermock",
+  "name": "intermock-ssg",
   "version": "0.2.5",
   "description": "Automatically create mock objects and JSON from TypeScript interfaces via Faker",
   "repository": {
@@ -93,6 +93,6 @@
     ],
     "all": true
   },
-  "author": "Ryan McDermott <ryanmcdermott@google.com>",
+  "author": "Rashila Pandey <rashila@solidstategroup.com>",
   "license": "Apache"
 }
