@@ -1381,7 +1381,4 @@ const writeToaFile = (output: string, options: Options) => {
   fs.writeFile("./" + "/MockData.ts", outputToWrite, function (err: any) {
     if (err) return console.log(err);
   });
-  fs.writeFile("./" + "/MockData.json", output, function (err: any) {
-    if (err) return console.log(err);
-  });
 };
