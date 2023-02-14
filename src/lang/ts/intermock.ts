@@ -609,7 +609,7 @@ function resolveTuplePropertyType(
   sourceFile: ts.SourceFile,
   options: Options,
   types: Types
-): Array<unknown> {
+): unknown[] {
   const result = [];
   const elementTypes = node.elements;
 
@@ -805,9 +805,9 @@ function processIntersectionPropertyType(
     if (supportedType) {
       output[property] = generatePrimitive(property, nd.kind, options, "");
     } else {
-      const IstypeReferenceNode = nd.kind === ts.SyntaxKind.TypeReference;
+      const istypeReferenceNode = nd.kind === ts.SyntaxKind.TypeReference;
 
-      if (IstypeReferenceNode) {
+      if (istypeReferenceNode) {
         const typeReferenceNode = nd as ts.TypeReferenceNode;
         processPropertyTypeReference(
           typeReferenceNode,
@@ -1365,6 +1365,5 @@ export function mock(options: Options) {
     );
   });
 
-  console.log("output===>", JSON.stringify(output));
   return formatOutput(output, options);
 }
