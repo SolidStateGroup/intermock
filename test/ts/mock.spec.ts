@@ -205,7 +205,7 @@ describe('Intermock TypeScript: Mock tests', () => {
     return runTestCase(
         `${__dirname}/test-data/generic.ts`, 'Person', expectedGenerics.Person);
   });
-  
+
   it('should generate mock for imported interfaces', async () => {
     return runTestCase(
         `${__dirname}/test-data/importExportSpecifier/import.ts`, 'Foo',
